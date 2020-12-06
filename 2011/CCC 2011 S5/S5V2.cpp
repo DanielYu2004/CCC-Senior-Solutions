@@ -36,9 +36,8 @@ void convert(vector<int> &array)
 }
 
 pair<vector<vector<int>>, int> recur(vector<vector<int>> parent_array, int steps){
-
+    cout << "STEPS: " << steps;
     vector<vector<int>> next_array;
-
     for (auto arr : parent_array){
         convert(arr);
         if (visited.find(arr) == visited.end()){ // if it does not exist
