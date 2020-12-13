@@ -107,7 +107,7 @@ for i in aValues:
     inter = list(set(values["A"]).intersection(available[to_find]))
     if (len(inter) > 1 or (len(inter) == 1 and inter[0] != i)):
         index = inter[0]
-        for i in range
+        for i in range:
         print(inter)
         string = swap(string, i, index)
         # values["A"].remove(i)
