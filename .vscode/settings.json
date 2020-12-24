@@ -2,7 +2,9 @@
     "files.associations": {
         "iomanip": "cpp",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "limits": "cpp",
+        "random": "cpp"
     },
     "python.pythonPath": "C:\\Python39\\python.exe"
 }
