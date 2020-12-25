@@ -23,8 +23,6 @@ typedef set<int> si;
 typedef set<si> sii;
 typedef vector<string> vs;
 
-template<typename K, typename V>
-void print_map(map<K,V> const &m);
 template<typename Container>
 void print_vector(Container v);
 void print_set(si s);
@@ -33,6 +31,32 @@ void print_set(si s);
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
 
+    map<string, string> mp, mpp;
+
+    int n;
+    cin >> n;
+
+    vs a(n), b(n);
+
+    REP(n){
+        cin >> a[i];
+    } 
+
+    REP(n){
+        cin >> b[i];
+        mp[a[i]] = b[i];
+        mpp[b[i]] = a[i];
+        if (a[i] == b[i]){
+            cout << "bad";
+            return 0;
+        }
+    }
+
+    if (mp == mpp){
+        cout << "good";
+    } else{
+        cout << "bad";
+    }
 
 
     return 0;

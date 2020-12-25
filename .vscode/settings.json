@@ -4,7 +4,12 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "limits": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "string_view": "cpp"
     },
     "python.pythonPath": "C:\\Python39\\python.exe"
 }
