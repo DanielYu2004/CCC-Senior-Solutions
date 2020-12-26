@@ -11,5 +11,6 @@
         "unordered_set": "cpp",
         "string_view": "cpp"
     },
-    "python.pythonPath": "C:\\Python39\\python.exe"
+    "python.pythonPath": "C:\\Users\\danie\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.formatting.provider": "black"
 }
