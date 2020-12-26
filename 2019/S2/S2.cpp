@@ -3,7 +3,7 @@
 using namespace std;
 
 // vector<int> primes;
-set<int> primes;
+unordered_set<int> primes;
 
 
 pair<int,int> solve(int target){
@@ -34,15 +34,20 @@ pair<int,int> solve(int target){
 
 int main(){
 
-    int length = 1000000;
 
     int n;
     cin >> n;
     vector<int> sols(n);
 
+    int m = 0;
+
     for (int i = 0; i < n; i++){
         cin >> sols[i];
+        m = max(m, sols[i]);
     }
+
+    int length = 2 * m;
+
 
     vector<int> numbers(length + 1, 1);
 
