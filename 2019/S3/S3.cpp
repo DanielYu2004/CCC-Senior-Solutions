@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "template.h"
 
 using namespace std;
 
@@ -22,7 +21,6 @@ int main(){
     // }
 
     // print_square(m);
-    print_vector();
 
     return 0;
 }
