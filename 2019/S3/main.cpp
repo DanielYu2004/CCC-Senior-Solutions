@@ -1,0 +1,91 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define F first
+#define S second
+#define PB push_back
+#define MP make_pair
+#define FOR(i,a,b) for(int i=a;i<b;++i)
+#define REP(n) FOR(i,0,n)
+#define endl "\n";
+
+typedef long long LL; 
+typedef pair<int, int> pii; 
+typedef pair<LL, LL> pll; 
+typedef pair<string, string> pss; 
+typedef vector<int> vi; 
+typedef vector<vi> vvi; 
+typedef vector<pii> vii; 
+typedef vector<LL> vl; 
+typedef vector<vl> vvl; 
+typedef set<int> si;
+typedef set<si> sii;
+typedef vector<string> vs;
+
+template<typename K, typename V>
+void print_map(map<K,V> const &m);
+template<typename Container>
+void print_vector(Container v);
+void print_set(si s);
+
+
+int main(){
+    ios_base::sync_with_stdio(0); cin.tie(0);
+
+    map<int, map<int, int>> mp;
+    set<pii> empty;
+
+
+    REP(3){
+        FOR(a, 1, 4){
+            string temp;
+            cin >> temp;
+
+            if (temp != "X"){
+                mp[i+1][a] = stoi(temp);
+            } else{
+                empty.insert(MP(i+1,a));
+            }
+            
+        }
+    }
+
+    for (auto x : mp){
+        // cout << x.first << " ";
+        for (auto y: x.second){
+            
+            cout << y.second << " ";
+        }
+        cout << endl;
+    }
+
+    for (auto x: empty){
+        cout << x.first << "," << x.second << "  ";
+    }
+
+
+    return 0;
+}
+
+template<typename Container>
+void print_vector(Container v){
+    cout << "[" ;
+    for (int i = 0; i < v.size() - 1; i++){
+        cout << v[i] << ", ";
+    }
+    cout << v[v.size() - 1] << "]" << "\n";
+}
+
+void print_set(si s){
+    vi v(s.begin(), s.end());    
+    print_vector(v);
+}
+
+template<typename K, typename V>
+void print_map(map<K,V> const &m)
+{
+    for (auto const& pair: m) {
+        std::cout << "{" << pair.first << ": " << pair.second << "}\n";
+    }
+}
