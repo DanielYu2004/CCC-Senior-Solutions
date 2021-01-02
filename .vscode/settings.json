@@ -9,7 +9,8 @@
         "string": "cpp",
         "unordered_map": "cpp",
         "unordered_set": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "functional": "cpp"
     },
     "python.pythonPath": "C:\\Users\\danie\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "python.formatting.provider": "black"
