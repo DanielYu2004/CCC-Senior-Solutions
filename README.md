@@ -14,4 +14,4 @@ Here lies all my CCC Senior solutions in preparation for the 2021 CCC contest
 |   2013|  15 	|   15	|   15	|  0 	|   0	|45|
 |   2012|  0 	|   0	|   0	|  0 	|   0	| 0 |
 |   2011|  15 	|   15	|   15	|  15 	|   9	|69|
-|   2010|  15 	|   15	|   0	|  0 	|   0	|30|
+|   2010|  15 	|   15	|   14	|  0 	|   0	|44|
