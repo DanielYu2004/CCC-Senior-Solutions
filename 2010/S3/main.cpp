@@ -34,7 +34,7 @@ int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
 
     // This solution always places a firehydrant as far away from the first house in the positive direction
-    // so it does not consider the cases of negative looparound, which my be why it only gets 14/15
+    // so it does not consider the cases of negative looparound, which may be why it only gets 14/15
 
     int h, k;
 
