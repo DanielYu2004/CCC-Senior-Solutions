@@ -5,7 +5,7 @@ Here lies all my CCC Senior solutions in preparation for the 2021 CCC contest
 |   Year	|   Senior 1	|   Senior 2	| Senior 3  	|  Senior 4 	|   Senior 5	|   Score    |
 |---	|---	|---	|---	|---	|---	|--- |
 |   2020	|  15 	|   15	|  15 	|  4 	|   0	| 49|
-|   2019| 15 	|   15 | 4 | 0 	|   0	| 34 |
+|   2019| 15 	|   15 | 4 | 0 	|   15	| 49 |
 |   2018|  15 	|   15 | 15 | 9 | 0	| 54 |
 |   2017|  15 	|   15	|   15	|  0 	|   0	| 45 |
 |   2016|  15 	|   15 |9|  0 	|   0	|39|

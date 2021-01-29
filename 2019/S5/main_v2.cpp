@@ -29,78 +29,55 @@ template<typename Container>
 void print_vector(Container v);
 void print_set(si s);
 
-vvi v;
-LL sol = 0;
 int n, k;
-
-int calcLenTwo(int x, int y){
-    int m = max(v[y][x], max(v[y+1][x], v[y+1][x+1]));
-    return m;
-}
-
-int calc(int x, int y, int len, int sub_len){
-    int prev = max(v[y][x], max(v[y+(len-sub_len)][x], v[y+(len-sub_len)][ x+(len-sub_len)]));
-    return prev;
-}
-
-void solve(int len){
-    if (len == 1){
-        return; 
-    } if (len == 2){
-        return;
-    }
-
-    int sub_len = (2 * len + 2) / 3;
-    solve(sub_len);
-
-    FOR(y, 0, n - len + 1){
-        FOR(x, 0, y+1){
-            int temp = calc(x, y, len, sub_len);
-            v[y][x] = temp;
-        }
+LL sol = 0;
+// map<int, vector<vector<int>>> mp;
+map<int, map<int, map<int, int>>> mp;
+int solve(int x, int y, int len){
+    if (mp[len][y].find(x) == mp[len][y].end()){
+        int sub_len = (2 * len + 2) / 3;
+        mp[len][y][x] = max(solve(x, y, sub_len), max(solve(x,y + (len - sub_len),sub_len), solve(x + (len-sub_len), y + (len-sub_len), sub_len)));
+        return mp[len][y][x];
+    } else{
+        return mp[len][y][x];
     }
 }
 
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
 
+    // std::ifstream in("test.txt");
+    // std::streambuf *cinbuf = std::cin.rdbuf(); //save old buf
+    // std::cin.rdbuf(in.rdbuf()); //redirect std::cin to in.txt
+
     cin >> n >> k;
 
-    REP(n){
-        vi temp(i + 1);
-        FOR(a, 0, i + 1){
-            cin >> temp[a];
-        }
-        v.PB(temp);
-    }
 
-    if (k == 1){
-        FOR(i, 0, n - k + 1){
-            FOR(j, 0, i+1){
-                sol+=v[i][j];
-            }   
-        }
-        cout << sol;
-        return 0;
-    }
-
-    // base calcs
-    FOR(y, 0, n - 2 + 1){
-        FOR(x, 0, y+1){
-            int temp = calcLenTwo(x,y);
-            v[y][x] = calcLenTwo(x, y);
-        }
-    }
-
-    solve(k);
-
-    FOR(i, 0, n - k + 1){
+    FOR(i, 0, n){
+        vector<int> temp(i+1, -1);
+        // FOR(a, 2, n+1){
+        //     mp[a].PB(temp);
+        // }
         FOR(j, 0, i+1){
-            sol+=v[i][j];
-        }   
+            cin >> mp[1][i][j];
+        }
+        // mp[1].PB(temp);
     }
 
+    FOR(i, 0, n-k+1){
+        FOR(j, 0, i+1){
+            sol += solve(j, i, k);
+        }
+    }
+
+    // FOR(i, 1, n+1){
+    //     for (auto x: mp[i]){
+    //         print_vector(x);
+    //     }
+    // }
     cout << sol;
+
+
 
     return 0;
 }
