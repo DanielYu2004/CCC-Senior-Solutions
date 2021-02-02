@@ -33,7 +33,7 @@ void print_set(si s);
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
 
-
+    
 
     return 0;
 }
@@ -59,3 +59,9 @@ void print_map(map<K,V> const &m)
         std::cout << "{" << pair.first << ": " << pair.second << "}\n";
     }
 }
+
+// To read from text file snippet
+//
+// std::ifstream in("in.txt");
+// std::streambuf *cinbuf = std::cin.rdbuf();
+// std::cin.rdbuf(in.rdbuf()); 
