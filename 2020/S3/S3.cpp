@@ -55,13 +55,6 @@ int main(){
     string h;
 
     cin >> n >> h;
-    // ifstream myfile ("s3.4-37.txt");
-    // if (myfile.is_open())
-    // {
-    //     getline(myfile, n);
-    //     getline(myfile, h);
-    //     myfile.close();
-    // }
 
     needle = {
         {'a', 0},
@@ -91,8 +84,6 @@ int main(){
         {'y', 0},
         {'z', 0},
     };
-
-    // cout << n.size();
 
     if (n.size() > h.size()){
         cout << 0;
@@ -139,21 +130,13 @@ int main(){
             visited.insert(hasher(h.substr(0, n.size())));
         }
 
-        // cout << "a: " << cur_needle['a'] << "b: " << cur_needle['b'] << "c: " << cur_needle['c'] << "\n"; 
-
         for (int i = 1; i < h.size() - n.size(); i++){
             cur_needle[h[i-1]]--;
             cur_needle[h[i + n.size()-1]]++;
             string window = h.substr(i, n.size());
-            // cout << "a: " << cur_needle['a'] << " b: " << cur_needle['b'] << " c: " << cur_needle['c'] << " "; 
-            // cout << window << "\n";
             if (cur_needle == needle && visited.find(hasher(window)) == visited.end()){
                 visited.insert(hasher(window));
             }
-            // cout << h.substr(i, n.size()) << "\n";
-            // if (visited.find(h.substr(i, n.size())) == visited.end() && is_perm(h.substr(i, n.size()))){
-            //     visited.insert(h.substr(i,n.size()));
-            // }
         }
         if (h.size() - n.size() >= 1){
             cur_needle[h[h.size() - n.size() -1]]--;
@@ -162,11 +145,6 @@ int main(){
                 visited.insert(hasher(h.substr(h.size() - n.size(), n.size())));
             }
         }
-        
-
-        // for (auto x: visited){
-        //     cout << x;
-        // }
 
         cout << visited.size();
     }

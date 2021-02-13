@@ -20,7 +20,7 @@ typedef vector<pii> vii;
 typedef vector<LL> vl; 
 typedef vector<vl> vvl; 
 typedef set<int> si;
-typedef set<si> sii;
+typedef set<pii> sii;
 typedef vector<string> vs;
 
 template<typename K, typename V>
@@ -40,11 +40,15 @@ int main(){
 
 template<typename Container>
 void print_vector(Container v){
-    cout << "[" ;
-    for (int i = 0; i < v.size() - 1; i++){
-        cout << v[i] << ", ";
+    if (v.size() > 0){
+        cout << "[" ;
+        for (int i = 0; i < v.size() - 1; i++){
+            cout << v[i] << ", ";
+        }
+        cout << v[v.size() - 1] << "]" << "\n";
+    } else{
+        cout << "[]" << "\n";
     }
-    cout << v[v.size() - 1] << "]" << "\n";
 }
 
 void print_set(si s){
