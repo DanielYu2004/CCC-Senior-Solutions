@@ -1,17 +1,20 @@
 # CCC-Senior-Solutions
 
-Here lies all my CCC Senior solutions in preparation for the 2021 CCC contest
+## Description
+
+Here are all my CCC Senior solutions in preparation for the 2021 CCC, and their respective scores earned through the 
+cccgrader.
 
 |   Year	|   Senior 1	|   Senior 2	| Senior 3  	|  Senior 4 	|   Senior 5	|   Score    |
 |---	|---	|---	|---	|---	|---	|--- |
 |   2020	|  15 	|   15	|  15 	|  4 	|   0	| 49|
-|   2019| 15 	|   15 | 4 | 0(DP) 	|   15	| 49 |
+|   2019| 15 	|   15 | 4 | 0 	|   15	| 49 |
 |   2018|  15 	|   15 | 15 | 9 | 0	| 54 |
-|   2017|  15 	|   15	|   15	|  0(Graph Theory) 	|   0	| 45 |
+|   2017|  15 	|   15	|   15	|  0 	|   0	| 45 |
 |   2016|  15 	|   15 | 15 |  0(DP) 	|   0	|45|
 |   2015|  15 	|   15	|   15	|  15 	|   0	|60|
 |   2014|  15 	|   15	|   15	|  7 	|   0	|52|
 |   2013|  15 	|   15	|   15	|  15 	|   0	|60|
 |   2012|  0 	|   0	|   0	|  0 	|   0	| 0 |
 |   2011|  15 	|   15	|   15	|  15 	|   9	|69|
-|   2010|  15 	|   15	|   14	|  0(Graph Theory) 	|   0	|44|
+|   2010|  15 	|   15	|   14	|  0 	|   0	|44|
