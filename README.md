@@ -5,6 +5,8 @@
 Here are all my CCC Senior solutions in preparation for the 2021 CCC, and their respective scores earned through the 
 cccgrader.
 
+Majority of the solutions are written with C++.
+
 |   Year	|   Senior 1	|   Senior 2	| Senior 3  	|  Senior 4 	|   Senior 5	|   Score    |
 |---	|---	|---	|---	|---	|---	|--- |
 |   2020	|  15 	|   15	|  15 	|  4 	|   0	| 49|
